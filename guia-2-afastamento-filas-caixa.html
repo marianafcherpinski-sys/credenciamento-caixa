@@ -1,0 +1,173 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Como me ausentar das filas, Credenciamento CAIXA 0244/2024</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,600&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#FAF8F5;--panel:#FFFFFF;--ink:#262321;--ink-soft:#6A625C;
+  --accent:#C8202C;--accent-deep:#9E1822;--graf:#2B2B2B;
+  --line:#E4DED5;--soft:#F2EEE8;--rule:#CFC8BD;
+  --serif:'Fraunces',Georgia,serif;--sans:'Figtree',system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{font-family:var(--sans);background:var(--bg);color:var(--ink);font-size:16px;line-height:1.6}
+.app{display:grid;grid-template-columns:340px 1fr;height:100vh;overflow:hidden}
+.sidebar{background:var(--panel);border-right:1px solid var(--line);display:flex;flex-direction:column;height:100vh;overflow-y:auto}
+.brand{display:flex;gap:12px;align-items:center;padding:22px 22px 16px}
+.logo{width:42px;height:42px;border-radius:9px;background:var(--accent);color:#fff;display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-style:italic;font-weight:600;font-size:22px;flex:0 0 auto}
+.brand h1{font-family:var(--serif);font-size:16px;line-height:1.2;font-weight:600}
+.brand h1 em{color:var(--accent);font-style:italic}
+.brand .sub{font-size:11.5px;color:var(--ink-soft);margin-top:3px}
+.progress-wrap{padding:8px 22px 16px;border-bottom:1px solid var(--line)}
+.progress-top{display:flex;justify-content:space-between;font-size:11px;color:var(--ink-soft);text-transform:uppercase;letter-spacing:1.5px;margin-bottom:7px}
+.progress-bar{height:3px;background:var(--soft);overflow:hidden}
+.progress-fill{height:100%;width:8%;background:var(--accent);transition:width .3s ease}
+.roteiro-label{font-size:11px;color:var(--ink-soft);text-transform:uppercase;letter-spacing:2.5px;font-weight:600;padding:16px 22px 8px}
+.nav-list{list-style:none;padding:0 12px 16px}
+.nav-item{display:grid;grid-template-columns:30px 1fr auto;gap:10px;align-items:center;padding:11px 12px;border-radius:0;cursor:pointer;border-left:3px solid transparent;transition:background .15s}
+.nav-item:hover{background:var(--soft)}
+.nav-item.active{background:var(--soft);border-left-color:var(--accent)}
+.nav-num{font-family:var(--serif);font-weight:600;color:var(--accent);font-size:15px}
+.nav-title{font-size:13px;font-weight:500;line-height:1.25}
+.nav-time{font-size:11px;color:var(--ink-soft)}
+.side-foot{margin-top:auto;padding:16px 22px;border-top:1px solid var(--line);font-size:11px;color:var(--ink-soft)}
+.content{height:100vh;overflow-y:auto;scroll-behavior:smooth}
+.slide{display:none;min-height:100vh;flex-direction:column;padding:clamp(32px,4.5vw,72px) clamp(28px,5vw,90px)}
+.slide.active{display:flex}
+.seclabel{font-size:clamp(12px,1.1vw,14px);text-transform:uppercase;letter-spacing:2.5px;font-weight:600;color:var(--accent);margin-bottom:14px}
+.slide h2{font-family:var(--serif);font-weight:600;font-size:clamp(32px,4.4vw,54px);line-height:1.04;margin-bottom:8px}
+.slide h2 em{font-style:italic;color:var(--accent)}
+.lead{font-size:clamp(16px,1.4vw,20px);color:var(--ink-soft);max-width:62ch;margin-bottom:26px}
+.slide h3{font-family:var(--serif);font-weight:600;font-size:clamp(19px,2vw,26px);margin:30px 0 10px;color:var(--graf)}
+.slide p{margin-bottom:13px;max-width:74ch}
+.slide ul,.slide ol{margin:6px 0 14px 22px;max-width:74ch}
+.slide li{margin-bottom:9px}
+.cite{font-size:12.5px;color:var(--accent-deep);font-weight:600;background:var(--soft);padding:1px 7px}
+.anchor{font-family:var(--serif);font-weight:600;font-size:clamp(22px,2.6vw,32px);line-height:1.22;color:var(--graf);border-left:3px solid var(--accent);padding:4px 0 4px 20px;margin:8px 0 26px;max-width:62ch}
+.anchor em{font-style:italic;color:var(--accent)}
+.steps{counter-reset:step;list-style:none;margin:8px 0 16px}
+.steps li{position:relative;padding:6px 0 14px 50px;margin-bottom:6px;max-width:82ch;border-bottom:1px solid var(--line)}
+.steps li:last-child{border-bottom:0}
+.steps li::before{counter-increment:step;content:counter(step);position:absolute;left:6px;top:4px;width:30px;height:30px;border-radius:50%;background:var(--accent);color:#fff;font-family:var(--serif);font-weight:600;display:flex;align-items:center;justify-content:center;font-size:15px}
+.tbl{width:100%;border-collapse:collapse;margin:12px 0 22px;font-size:13.5px;border-top:2px solid var(--graf)}
+.tbl th,.tbl td{padding:10px 12px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+.tbl th{background:var(--graf);color:#fff;font-size:11.5px;text-transform:uppercase;letter-spacing:.6px;font-weight:600}
+.tbl tr:nth-child(even) td{background:var(--soft)}
+.box{background:transparent;border:0;border-left:3px solid var(--rule);border-radius:0;padding:3px 0 3px 18px;margin:18px 0;max-width:82ch}
+.box .bt{font-weight:700;font-size:12.5px;text-transform:uppercase;letter-spacing:1px;margin-bottom:5px;color:#5A544E}
+.box.risk{border-left-color:var(--accent)}.box.risk .bt{color:var(--accent-deep)}
+.box.edital{border-left-color:var(--graf)}.box.edital .bt{color:var(--graf)}
+.box.edital .q{font-style:italic;color:#4A4540;font-size:13.5px;line-height:1.55}
+.box.tip,.box.warn,.box.interp{border-left-color:var(--rule)}
+.box p:last-child{margin-bottom:0}
+.check{list-style:none;margin:8px 0 16px}
+.check li{padding-left:6px;margin-bottom:10px;max-width:82ch}
+.modelo{border:1px solid var(--rule);background:var(--soft);padding:16px 18px;margin:18px 0;max-width:82ch}
+.modelo .mh{font-size:12px;text-transform:uppercase;letter-spacing:1px;font-weight:700;color:var(--accent-deep);margin-bottom:9px}
+.modelo .body{font-family:var(--sans);font-size:13.5px;line-height:1.65;white-space:pre-wrap;background:#fff;border:1px solid var(--line);padding:15px 16px}
+.modelo .note{font-size:12px;color:var(--ink-soft);margin-top:9px}
+.duo{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:0;border-top:2px solid var(--graf);margin:10px 0 18px}
+.duo div{padding:14px 16px;border-bottom:1px solid var(--line);border-right:1px solid var(--line)}
+.duo .k{font-size:11px;text-transform:uppercase;letter-spacing:1.2px;color:var(--accent-deep);font-weight:700;margin-bottom:5px}
+.duo .v{font-family:var(--serif);font-size:22px;font-weight:600}
+.qa-tools{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin:6px 0 18px}
+.qa-search{flex:1;min-width:200px;padding:10px 14px;border:1px solid var(--rule);font-family:var(--sans);font-size:14px}
+.qa-count{font-size:13px;color:var(--ink-soft)}
+.qa-group{font-family:var(--serif);font-weight:600;font-size:20px;color:var(--graf);margin:26px 0 10px;padding-bottom:6px;border-bottom:2px solid var(--line)}
+.qa{border:1px solid var(--line);margin-bottom:9px;background:var(--panel)}
+.qa summary{cursor:pointer;padding:13px 16px;font-weight:600;font-size:14.5px;list-style:none;display:flex;gap:10px;align-items:flex-start}
+.qa summary::-webkit-details-marker{display:none}
+.qa summary .qn{color:var(--accent);font-family:var(--serif);font-weight:700;flex:0 0 auto}
+.qa[open] summary{background:var(--soft)}
+.qa .ans{padding:4px 16px 15px 16px;font-size:14px}
+.nav-foot{display:flex;justify-content:space-between;gap:14px;margin-top:38px;padding-top:18px;border-top:1px solid var(--line)}
+.btn{font-family:var(--sans);font-size:14px;font-weight:600;padding:11px 20px;border-radius:0;border:1px solid var(--rule);background:transparent;color:var(--ink);cursor:pointer}
+.btn:hover{background:var(--soft)}
+.btn.primary{background:var(--accent);color:#fff;border-color:var(--accent)}
+.btn:disabled{opacity:.35;cursor:default}
+.small{font-size:12.5px;color:var(--ink-soft)}
+@media(max-width:880px){.app{grid-template-columns:1fr;height:auto}.sidebar{height:auto;position:sticky;top:0;z-index:5;max-height:42vh}.content{height:auto}.slide{min-height:auto}}
+@media print{@page{margin:13mm}html,body{background:#fff !important}.app{display:block !important;height:auto !important;overflow:visible !important}.sidebar{display:none !important}.content{height:auto !important;overflow:visible !important}.slide{display:flex !important;min-height:auto !important;page-break-after:always;padding:0 0 16px !important}.nav-foot,.btn,.qa-tools{display:none !important}.qa .ans{display:block !important}.box,.tbl,.steps li,.duo,.qa,.modelo{break-inside:avoid}a{color:inherit !important;text-decoration:none}}
+</style></head><body>
+<div class="app">
+<aside class="sidebar">
+<div class="brand"><div class="logo">Z</div><div><h1>Guia · <em>Afastamento</em> das Filas</h1><div class="sub">Como me ausentar das filas, Credenciamento CAIXA 0244/2024</div></div></div>
+<div class="progress-wrap"><div class="progress-top"><span>Progresso</span><span id="progressPct">8%</span></div><div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div></div>
+<div class="roteiro-label">Roteiro</div>
+<ul class="nav-list" id="navList"><li class="nav-item active" data-slide="0"><span class="nav-num">01</span><span class="nav-title">O que é o afastamento</span><span class="nav-time">4min</span></li><li class="nav-item" data-slide="1"><span class="nav-num">02</span><span class="nav-title">Passo a passo, com prazos</span><span class="nav-time">5min</span></li><li class="nav-item" data-slide="2"><span class="nav-num">03</span><span class="nav-title">Afastamento obrigatório</span><span class="nav-time">4min</span></li><li class="nav-item" data-slide="3"><span class="nav-num">04</span><span class="nav-title">O que acontece com a fila</span><span class="nav-time">3min</span></li><li class="nav-item" data-slide="4"><span class="nav-num">05</span><span class="nav-title">Checklist e erros</span><span class="nav-time">3min</span></li></ul>
+<div class="side-foot" id="sideFoot">Mentoria Do Zero ao Credenciamento</div>
+</aside>
+<main class="content" id="content"><section class="slide active"><div class="seclabel">Bloco 01, O conceito</div><h2>Como me <em>ausentar</em> das filas por um tempo</h2>
+<p class="lead">Você não precisa sair do credenciamento para parar um período. Dá para se afastar das filas de distribuição, total ou parcialmente, sem perder o contrato.</p>
+<div class="anchor">O afastamento é a forma <em>formal</em> de pausar. Parar de aceitar serviço sem pedir afastamento vira falta contratual.</div>
+<div class="box edital"><div class="bt">O que diz o edital: afastamento das filas</div><p class="q">“A CONTRATADA poderá solicitar afastamento total ou parcial das filas de distribuição (...). O período de afastamento das filas de distribuição não será inferior a 07 (sete) dias corridos. A CAIXA poderá não acatar a solicitação de afastamento das filas de distribuição da CONTRATADA. (Anexo I-A, itens 12.1 a 12.3)”</p></div>
+<div class="box interp"><div class="bt">Leitura técnica: gravidez, saúde, férias</div><p>O edital não nomeia "maternidade" nem "férias". O instrumento para qualquer pausa planejada é o afastamento das filas (item 12). A engenheira continua credenciada e usa esse mecanismo pelo período necessário.</p></div><div class="nav-foot"><button class="btn" data-action="prev" disabled>Anterior</button><button class="btn primary" data-action="next">Pr&oacute;ximo</button></div></section><section class="slide"><div class="seclabel">Bloco 02, O caminho</div><h2>O <em>passo a passo</em> do afastamento</h2>
+<div class="steps"><ol class="steps">
+<li>Conclua e entregue os trabalhos já demandados antes de se afastar. <span class="cite">TR 12.4</span></li>
+<li>Formalize o pedido à CAIXA conforme o procedimento dos Cadernos de Orientações, dizendo se é total ou parcial (quais Atividades/Polos). <span class="cite">TR 12.1</span></li>
+<li>Respeite o período mínimo de 7 dias corridos. <span class="cite">TR 12.2</span></li>
+<li>Atenção: a CAIXA pode não acatar o pedido. <span class="cite">TR 12.3</span></li>
+</ol></div>
+<div class="box edital"><div class="bt">O que diz o edital: concluir os trabalhos antes</div><p class="q">“A CONTRATADA deverá concluir e entregar, obedecendo aos prazos definidos, todos os trabalhos demandados antes de seu afastamento das filas de distribuição. (Anexo I-A, item 12.4)”</p></div><div class="modelo"><div class="mh">Modelo pra copiar e adaptar: pedido de afastamento das filas</div><div class="body">À Gestão do Contrato, CAIXA Econômica Federal.
+Credenciamento 0244/2024-5688, Contrato nº [número].
+
+[Razão social], CNPJ [nº], solicita AFASTAMENTO [TOTAL / PARCIAL] das filas de distribuição, nos termos do Anexo I-A, item 12.
+
+Abrangência: [todas / Atividades e Polos específicos].
+Período: de [data de início] a [data de fim] (mínimo de 7 dias corridos).
+
+A empresa concluirá e entregará todos os trabalhos já demandados antes do afastamento.
+
+[Cidade], [data].
+[Nome do Representante Legal], [Razão social]</div><div class="note">Formalize conforme os Cadernos de Orientações. Período mínimo de 7 dias corridos; a CAIXA pode não acatar.</div></div><div class="nav-foot"><button class="btn" data-action="prev">Anterior</button><button class="btn primary" data-action="next">Pr&oacute;ximo</button></div></section><section class="slide"><div class="seclabel">Bloco 03, Atenção</div><h2>Quando o afastamento é <em>automático</em></h2>
+<div class="box risk"><div class="bt">Ausência de todos os RTs</div><p>Se faltarem todos os RTs habilitados em determinada Atividade e Polo (temporária ou definitivamente), a empresa é afastada das filas daquela Atividade e Polo. <span class="cite">TR 3.1.6</span></p></div>
+<div class="box edital"><div class="bt">O que diz o edital: ausência de todos os RTs</div><p class="q">“A ausência, temporária ou definitiva, de todos os Responsáveis Técnicos habilitados em determinadas Atividades e vinculados a determinados Polos implicará afastamento da CONTRATADA das filas de distribuição de serviços destas Atividades e Polos. (Anexo I-A, item 3.1.6)”</p></div>
+<div class="box risk"><div class="bt">Afastamento voluntário não é ação preventiva</div><p>Diferente do afastamento que você pede, a CAIXA pode interromper novas demandas por conta própria (ação operacional preventiva), por até 60 dias, em caso de atraso, falta de resposta em 24h, ou apuração de falta. <span class="cite">TR 16.1 e 16.2</span></p></div>
+<div class="box tip"><div class="bt">A solução estrutural</div><p>Tenha mais de um RT habilitado por Atividade e Polo. Assim a ausência de um não afasta a empresa daquela fila.</p></div><div class="nav-foot"><button class="btn" data-action="prev">Anterior</button><button class="btn primary" data-action="next">Pr&oacute;ximo</button></div></section><section class="slide"><div class="seclabel">Bloco 04, Fila</div><h2>O que acontece com a <em>fila</em></h2>
+<p>Enquanto afastada, você sai das filas daquelas Atividades e Polos e não recebe novas OS ali. As filas são compostas só por empresas ativas, habilitadas e não afastadas. <span class="cite">TR 6.1.2</span></p>
+<div class="box edital"><div class="bt">O que diz o edital: composição das filas</div><p class="q">“Haverá uma fila para cada conjunto Atividade-Polo. (...) A posição inicial das empresas em cada fila será definida aleatoriamente. (Anexo I-A, itens 6.1.1 e 6.1.3)”</p></div>
+<div class="box interp"><div class="bt">Leitura técnica</div><p>A posição inicial na fila é aleatória e a distribuição é equânime (TR 6.1.3 e 6.2). O edital não detalha a posição exata no retorno do afastamento voluntário; confirme o procedimento nos Cadernos de Orientações vigentes.</p></div><div class="nav-foot"><button class="btn" data-action="prev">Anterior</button><button class="btn primary" data-action="next">Pr&oacute;ximo</button></div></section><section class="slide"><div class="seclabel">Bloco 05, Na prática</div><h2>Checklist do <em>afastamento</em></h2>
+<ul class="check">
+<li>☐ Concluir e entregar trabalhos já demandados <span class="cite">TR 12.4</span></li>
+<li>☐ Pedido formal (total ou parcial), conforme Cadernos de Orientações <span class="cite">TR 12.1</span></li>
+<li>☐ Período mínimo de 7 dias corridos <span class="cite">TR 12.2</span></li>
+<li>☐ Lembrar: a CAIXA pode não acatar <span class="cite">TR 12.3</span></li>
+</ul>
+<div class="box risk"><div class="bt">Erros que custam caro</div>
+<p>1. Parar de aceitar serviço sem pedir afastamento (vira falta CF2/recusa indevida). <span class="cite">Anexo I-B</span></p>
+<p>2. Não responder à CAIXA em 24h: interrupção de demandas. <span class="cite">TR 16.2</span></p>
+<p>3. Abandonar trabalhos já demandados. <span class="cite">TR 12.4</span></p></div><div class="nav-foot"><button class="btn" data-action="prev">Anterior</button><button class="btn" data-action="next" disabled>Fim</button></div></section></main>
+</div>
+<script>
+(function(){
+  let current=0;
+  const slides=document.querySelectorAll('.slide');
+  const navItems=document.querySelectorAll('.nav-item');
+  const total=slides.length;
+  const content=document.getElementById('content');
+  const sideFoot=document.getElementById('sideFoot');
+  function goTo(i){
+    if(i<0||i>=total)return;
+    slides[current].classList.remove('active');navItems[current].classList.remove('active');
+    current=i;slides[current].classList.add('active');navItems[current].classList.add('active');
+    upd();if(content)content.scrollTop=0;navItems[current].scrollIntoView({block:'nearest'});
+  }
+  function upd(){
+    const p=Math.round(((current+1)/total)*100);
+    document.getElementById('progressFill').style.width=p+'%';
+    document.getElementById('progressPct').textContent=p+'%';
+    if(sideFoot)sideFoot.textContent='Bloco '+(current+1)+' de '+total+' \u00b7 CAIXA 0244/2024';
+  }
+  navItems.forEach((it,i)=>it.addEventListener('click',()=>goTo(i)));
+  document.querySelectorAll('[data-action=next]').forEach(b=>b.addEventListener('click',()=>goTo(current+1)));
+  document.querySelectorAll('[data-action=prev]').forEach(b=>b.addEventListener('click',()=>goTo(current-1)));
+  document.addEventListener('keydown',e=>{const t=(e.target.tagName||'').toLowerCase();if(t=='input'||t=='textarea')return;if(e.key=='ArrowRight'){e.preventDefault();goTo(current+1)}if(e.key=='ArrowLeft'){e.preventDefault();goTo(current-1)}});
+  window.addEventListener('beforeprint',function(){document.querySelectorAll('.slide').forEach(s=>s.classList.add('active'));document.querySelectorAll('details.qa').forEach(d=>d.open=true)});
+  const search=document.getElementById('qaSearch');
+  if(search){const list=document.getElementById('qaList');const all=Array.from(list.querySelectorAll('.qa'));const groups=Array.from(list.querySelectorAll('.qa-group'));const cnt=document.getElementById('qaCount');if(cnt)cnt.textContent=all.length+' perguntas';
+    search.addEventListener('input',()=>{const q=search.value.toLowerCase().trim();let n=0;all.forEach(d=>{const hit=q===''||d.textContent.toLowerCase().includes(q);d.style.display=hit?'':'none';if(hit)n++;d.open=(q!==''&&hit);});groups.forEach(g=>{let s=g.nextElementSibling,any=false;while(s&&!s.classList.contains('qa-group')){if(s.classList.contains('qa')&&s.style.display!=='none')any=true;s=s.nextElementSibling;}g.style.display=any?'':'none';});cnt.textContent=(q===''?all.length:n)+(n===1?' pergunta':' perguntas');});}
+  upd();
+})();
+</script></body></html>
